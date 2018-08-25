@@ -1,0 +1,45 @@
+.hometron {
+  background-image: url("../img/rest1.jpg");
+  background-size: cover;
+  padding-bottom: 250px;
+  display:hidden;
+}
+
+
+
+.blockback {
+  background-color: rgba(255,255,255,.5);
+  width: 60%;
+  height: 20%;
+  position: relative;
+  left: 25%;
+  bottom: 25%;
+  border-radius: 1%;
+
+
+
+}
+
+.centerit {
+  top: 20px;
+  height: 50px;
+
+}
+
+.darken {
+  text-shadow: 5px, 5px black;
+}
+
+.pt-100 {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+@media (max-width:720px) {
+    .centerit {
+      height:20%;
+    }
+
+    .hermansgrill{
+      font-size: 50px;
+    }
+}
