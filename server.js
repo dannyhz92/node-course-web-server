@@ -10,7 +10,6 @@ hbs.registerPartials(__dirname + "/views/partials");
 app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
 
 app.set("view engine", "hbs");
-app.use(express.static('public'));
 
 app.use((req, res, next)=>{
     var now = new Date().toString();
@@ -37,6 +36,9 @@ hbs.registerHelper("getCurrentYear", ()=>{
 hbs.registerHelper("screamIt", (text)=>{
     return text.toUpperCase();
 });
+
+app.use(express.static('public'));
+
 
 app.get("/", (req, res)=>{
   // res.send("<h1>Hello Express!</h1>");
