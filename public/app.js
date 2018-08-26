@@ -5,4 +5,6 @@ $(".hometron").velocity("fadeIn", {
     duration: 350
 });
 
-document.getElementById("hermans").innerHTML("This")
+document.getElementById("hermans").style.color = green;
+
+console.log("This");

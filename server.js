@@ -6,10 +6,11 @@ const port  = process.env.PORT || 3000;
 
 
 var app = express();
-app.use(express.static('public'));
-app.use(express.static('files'));
 hbs.registerPartials(__dirname + "/views/partials");
+app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
+
 app.set("view engine", "hbs");
+app.use(express.static('public'));
 
 app.use((req, res, next)=>{
     var now = new Date().toString();
@@ -25,7 +26,6 @@ app.use((req, res, next)=>{
 // app.use((req, res, next)=>{
 //   res.render("maintence.hbs")
 // });
-app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
 
 
 
