@@ -38,7 +38,7 @@ hbs.registerHelper("screamIt", (text)=>{
 });
 
 app.use(express.static('public'));
-
+app.use(express.static(__dirname + '/public' ));
 
 app.get("/", (req, res)=>{
   // res.send("<h1>Hello Express!</h1>");
