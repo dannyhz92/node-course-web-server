@@ -1,8 +1,6 @@
-import Velocity from 'node_modules/velocity-animate';
+import Velocity from 'velocity-animate';
 
-$(".hometron").velocity("fadeIn", {
-    duration: 350
-});
+Velocity(document.getElementById("hometron"), { opacity: 0.5 }, { duration: 1000 });
 
 // document.getElementById("hermans").style.color = green;
 
