@@ -1,55 +1,130 @@
-.hometron {
-  background-image: url("../img/rest1.jpg");
-  background-size: cover;
-  padding-bottom: 200px;
-  display:none;
+/*
+
+
+  Greenish Blue      #34c6d3  (Buttons, icons, links, lines, and backgrounds)
+  steel grey        : # 41464b (hedings)
+  blue bayoux         #64707b   (paragraphs)
+  white                #fff
+  black                000
+ */
+/* ===============general css================ */
+html, body {
+  height: 100%;
 }
 
-.rest2{
-  width:250px;
-  height:250px;
-  
+body {
+  font-family: "Roboto Condensed", "sans-serif";
 }
 
-.blockback {
-  background-color: rgba(255,255,255,.5);
-  width: 60%;
-  height: 20%;
-  position: relative;
-  left: 25%;
-  bottom: 25%;
-  border-radius: 1%;
-
-
-
+h3 {
+  color: #41464b;
 }
 
-.centerit {
-  top: 20px;
-  height: 50px;
-
-}
-
-.darken {
-  text-shadow: 5px, 5px black;
-}
-
-.pt-100 {
-  padding-top: 100px;
-  padding-bottom: 50px;
-}
-
-#secondsection {
-  display:none;
+p {
+  color: #64707b;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 
-@media (max-width:720px) {
-    .centerit {
-      height:20%;
-    }
+/* ----------------------------------------home-====================== */
 
-    .hermansgrill{
-      font-size: 50px;
-    }
+#home {
+  height: 100%;
+}
+
+#home-cover {
+  height: 100%;
+
+  background-image:url("../img/rest1.jpg");
+  /* background: linear-gradient(
+                     rgba(20,20,20, .5),
+                     rgba(20,20,20, .5)),
+                     url("../img/rest1.jpg"); */
+  background-size:cover;
+    background-position: center;
+     background-repeat: no-repeat;
+     width: 100%;
+}
+#black-cover {
+  width: 100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#home-content-box {
+
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+#home-content-box-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#home-heading h3 {
+  background-color: white;
+    color:black;
+   font-size: 55px;
+   font-weight:700;
+   margin: 20px 0 20px 0;
+   text-transform: uppercase;
+}
+
+#home p {
+  background-color: white;
+}
+
+
+
+/*=================Second section==================  */
+
+#second-pic {
+
+  background-image:url("../img/rest2.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-bottom: 300px;
+}
+
+#about {
+  height:auto;
+}
+
+/*===============third section ==================  */
+
+#third-pic {
+  background-image:url("../img/rest3.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-bottom: 300px;
+}
+
+#owner {
+  height: auto;
+}
+
+/*=============PARALLAX ===============  */
+.bg-parallax {
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+/*===========utility classes ============  */
+.center-text {
+  margin:auto;
+  text-align: center;
+}
+.table {
+  display: table;
+  height: 100%;
 }
