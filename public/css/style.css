@@ -89,12 +89,11 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  padding-bottom: 300px;
+  height: 100%;
+  padding-bottom: 500px;
 }
 
-#about {
-  height:auto;
-}
+
 
 /*===============third section ==================  */
 
@@ -104,12 +103,11 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  padding-bottom: 300px;
+  padding-bottom: 500px;
+  height: 100%;
 }
 
-#owner {
-  height: auto;
-}
+
 
 /*=============PARALLAX ===============  */
 .bg-parallax {
@@ -127,4 +125,66 @@ background-attachment: fixed;
 .table {
   display: table;
   height: 100%;
+}
+
+.header-size-increased {
+  font-size: 35px;
+  font-weight:700;
+
+}
+.p-size-increased {
+  font-size: 20px;
+}
+
+.underline {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 0 auto 30px auto;
+}
+
+#pic-links img {
+  /* width:445px; */
+  /* height:300px; */
+  margin-left: 0px;
+  margin-right: -350px;
+
+}
+
+#pic-links .row{
+  margin-left: -30px;
+  margin-right: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+}
+
+.img-fluid {
+  padding: 0;
+  margin: 0; 
+}
+
+
+
+/*============== Multiple ID calls==================  */
+
+/* #bar, #meals{
+  height: 700px;
+} */
+
+
+/*================ANIMATIONS =========================  */
+
+  #home {
+    animation-duration: .9s;
+  }
+
+/*MEDIA QUERIES============================================  */
+
+
+@media (max-width:700){
+
+  #home p {
+    display: none;
+  }
 }
